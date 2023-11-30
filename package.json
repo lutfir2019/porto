@@ -1,0 +1,18 @@
+{
+  "name": "port",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": " SET NODE_OPTIONS=--openssl-legacy-provider && nuxt",
+    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && nuxt build",
+    "start": "SET NODE_OPTIONS=--openssl-legacy-provider && nuxt start",
+    "generate": "SET NODE_OPTIONS=--openssl-legacy-provider && nuxt generate"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "bootstrap-vue": "^2.15.0",
+    "nuxt": "^2.14.0",
+    "vite": "^5.0.2",
+    "vue-ionicons": "^3.0.5"
+  }
+}

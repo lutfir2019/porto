@@ -1,0 +1,37 @@
+[
+  {
+    "name": "About",
+    "path": "/About",
+    "component": "D:\\\\2023\\\\New folder\\\\portfolio\\\\pages\\\\About.vue",
+    "chunkName": "pages/About",
+    "_name": "_0e9811a0"
+  },
+  {
+    "name": "Articles",
+    "path": "/Articles",
+    "component": "D:\\\\2023\\\\New folder\\\\portfolio\\\\pages\\\\Articles.vue",
+    "chunkName": "pages/Articles",
+    "_name": "_782f822c"
+  },
+  {
+    "name": "Contact",
+    "path": "/Contact",
+    "component": "D:\\\\2023\\\\New folder\\\\portfolio\\\\pages\\\\Contact.vue",
+    "chunkName": "pages/Contact",
+    "_name": "_c3e080fa"
+  },
+  {
+    "name": "Projects",
+    "path": "/Projects",
+    "component": "D:\\\\2023\\\\New folder\\\\portfolio\\\\pages\\\\Projects.vue",
+    "chunkName": "pages/Projects",
+    "_name": "_13691ea7"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "D:\\\\2023\\\\New folder\\\\portfolio\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_be0c9bd6"
+  }
+]
