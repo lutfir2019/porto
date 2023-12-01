@@ -56,7 +56,7 @@ export default {
     };
   },
   head: {
-    title: "About 🕵️‍♂️ - Asaolu Elijah",
+    title: "About 🕵️‍♂️ - Lutfir Rahman",
     meta: [
       {
         hid: "description",
