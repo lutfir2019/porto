@@ -8,7 +8,9 @@
       </sub>
       on
       <em>
-        <a href="" target="_blank" rel="noopener">dev.to</a>
+        <a href="https://lutfirrrr.blogspot.com/" target="_blank" rel="noopener"
+          >Blogger</a
+        >
       </em>
       <br />
       <br />
@@ -24,7 +26,7 @@
       <b-spinner variant="primary" v-if="showLoader"></b-spinner>
     </p>
     <b-row class="articles" v-if="blogs.length > 0">
-      <div class="col-md-6" v-for="blog in blogs" :key="blog.id" v-if="!blogs">
+      <div class="col-md-6" v-for="(blog, i) in blogs" :key="i">
         <div>
           <b-card-group deck>
             <b-card
@@ -61,9 +63,6 @@
         </div>
       </div>
     </b-row>
-    <div class="row flex justify-content-center">
-      <h4>Halaman Sedang Dalam Pengembangan</h4>
-    </div>
   </b-container>
 </template>
 <script>
@@ -75,7 +74,19 @@ export default {
       showLoader: true,
       showErrALert: false,
       tagVariants: ["primary", "success", "warning", "info", "dark", "danger"],
-      blogs: []
+      blogs: [
+        {
+          title: "Pengujian Heuristic Evaluation",
+          desc:
+            "Evaluasi aplikasi iGracias mobile untuk karyawan IT Telkom Purwokerto menggunakan metode Heuristic Evaluation.",
+          image: require("@/assets/blog1.png"),
+          url:
+            "https://lutfirrrr.blogspot.com/2021/07/igracias-mobile-application.html",
+          date: "17 Juli 2021",
+          tags: "",
+          imgAlt: "iGracias Mobile" + " - Lutfir Rahman"
+        }
+      ]
     };
   },
   head: {
@@ -133,16 +144,16 @@ export default {
     }
   },
   mounted() {
-    this.getArticles(
-      "asaoluelijah",
-      () => {
-        this.showLoader = false;
-      },
-      () => {
-        this.showErrALert = true;
-        this.showLoader = false;
-      }
-    );
+    // this.getArticles(
+    //   "asaoluelijah",
+    //   () => {
+    //     this.showLoader = false;
+    //   },
+    //   () => {
+    //     this.showErrALert = true;
+    this.showLoader = false;
+    //   }
+    // );
   }
 };
 </script>

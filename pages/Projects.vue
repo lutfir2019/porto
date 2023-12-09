@@ -2,12 +2,7 @@
   <div class="about page  animate__animated animate__fadeIn">
     <h2>Recent Project</h2>
     <div class="container">
-      <div
-        class="row"
-        v-for="(project, index) in projects"
-        :key="index"
-        v-if="!projects"
-      >
+      <div class="row" v-for="(project, index) in projects" :key="index">
         <div class="col-md-5">
           <img
             :src="project.image_cover"
@@ -32,9 +27,6 @@
           </b-card>
         </div>
       </div>
-      <div class="row flex justify-content-center">
-        <h4>Halaman Sedang Dalam Pengembangan</h4>
-      </div>
     </div>
   </div>
 </template>
@@ -51,12 +43,22 @@ export default {
     return {
       projects: [
         {
-          title: "",
+          title: "The Movie",
           tag: "",
-          description: "",
-          // image_cover: require(""),
-          github_url: "",
-          link: ""
+          description:
+            "The Movie is a simple and clean website dedicated to showcasing movies. It boasts a minimalistic design with a focus on user experience.",
+          image_cover: require("@/assets/movie2.jpg"),
+          github_url: "https://github.com/lutfir2019/the-movie",
+          link: "https://the-movie-red.vercel.app/"
+        },
+        {
+          title: "MeMo",
+          tag: "JavaScript, NextJs, Vercel",
+          description:
+            "MeMo is a personal memory assistant that helps users to remember and recall information.",
+          image_cover: require("@/assets/reminder2.jpg"),
+          github_url: "https://github.com/lutfir2019/MeMo",
+          link: "https://me-mo.vercel.app/"
         }
       ]
     };
@@ -105,6 +107,7 @@ export default {
 .project-cover {
   width: inherit;
   border-radius: 3px;
+  mix-blend-mode: multiply;
 }
 hr.dope {
   border: 0;
