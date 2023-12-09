@@ -1,11 +1,6 @@
 # Personal Portfolio 👨🏿‍💻
 
-> Check it out [here](https://lutfir-porto.vercel.app/)
-
-<!--
-### Light-House Report ⚡️
-
-![Light House Report](https://raw.githubusercontent.com/AsaoluElijah/portfolio/master/light-house-report.png) -->
+> Check it out [here](https://lutfir.vercel.app/)
 
 ### Technologies + Tools used
 
@@ -42,7 +37,3 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 ### Author
 
 Made with ❤ and ☕️ by [Lutfir Rahman](https://github.com/lutfir2019)
-
-### Special Thanks To
-
-[Asaolu Elijah](https://github.com/AsaoluElijah)
