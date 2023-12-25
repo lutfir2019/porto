@@ -9,7 +9,7 @@
       on
       <em>
         <a href="https://lutfirrrr.blogspot.com/" target="_blank" rel="noopener"
-          >Blogger</a
+          >Blogspot</a
         >
       </em>
       <br />
@@ -74,19 +74,7 @@ export default {
       showLoader: true,
       showErrALert: false,
       tagVariants: ["primary", "success", "warning", "info", "dark", "danger"],
-      blogs: [
-        {
-          title: "Pengujian Heuristic Evaluation",
-          desc:
-            "Evaluasi aplikasi iGracias mobile untuk karyawan IT Telkom Purwokerto menggunakan metode Heuristic Evaluation.",
-          image: require("@/assets/blog1.png"),
-          url:
-            "https://lutfirrrr.blogspot.com/2021/07/igracias-mobile-application.html",
-          date: "17 Juli 2021",
-          tags: "",
-          imgAlt: "iGracias Mobile" + " - Lutfir Rahman"
-        }
-      ]
+      blogs: []
     };
   },
   head: {
@@ -144,8 +132,21 @@ export default {
     }
   },
   mounted() {
+    this.blogs = [
+      {
+        title: "Pengujian Heuristic Evaluation",
+        desc:
+          "Evaluasi aplikasi iGracias mobile untuk karyawan IT Telkom Purwokerto menggunakan metode Heuristic Evaluation.",
+        image: require("@/assets/blog1.png"),
+        url:
+          "https://lutfirrrr.blogspot.com/2021/07/igracias-mobile-application.html",
+        date: "17 Juli 2021",
+        tags: "",
+        imgAlt: "iGracias Mobile" + " - Lutfir Rahman"
+      }
+    ];
     // this.getArticles(
-    //   "asaoluelijah",
+    //   "lutfirr",
     //   () => {
     //     this.showLoader = false;
     //   },

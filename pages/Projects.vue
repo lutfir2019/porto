@@ -1,7 +1,8 @@
 <template>
   <div class="about page  animate__animated animate__fadeIn">
     <h2>Recent Project</h2>
-    <div class="container">
+    <b-spinner variant="primary" v-if="showLoader"></b-spinner>
+    <div class="container" v-if="projects.length > 0">
       <div class="row" v-for="(project, index) in projects" :key="index">
         <div class="col-md-5">
           <img
@@ -41,36 +42,9 @@ export default {
   },
   data() {
     return {
-      projects: [
-        {
-          title: "The Movie",
-          tag: "",
-          description:
-            "The Movie is a simple and clean website dedicated to showcasing movies. It boasts a minimalistic design with a focus on user experience.",
-          image_cover: require("@/assets/movie2.jpg"),
-          github_url: "https://github.com/lutfir2019/the-movie",
-          link: "https://the-movie-red.vercel.app/"
-        },
-        {
-          title: "MeMo",
-          tag: "JavaScript, NextJs, Vercel",
-          description:
-            "MeMo is a personal memory assistant that helps users to remember and recall information.",
-          image_cover: require("@/assets/reminder2.jpg"),
-          github_url: "https://github.com/lutfir2019/MeMo",
-          link: "https://me-mo.vercel.app/"
-        }
-      ]
+      projects: [],
+      showLoader: true
     };
-  },
-  methods: {
-    isEven(n) {
-      if (n % 2 == 0) {
-        return true;
-      } else {
-        return false;
-      }
-    }
   },
   head: {
     title: "Recent Projects 💻 - Lutfir Rahman",
@@ -97,6 +71,29 @@ export default {
         content: require("@/assets/man-computer.png")
       }
     ]
+  },
+  mounted() {
+    this.projects = [
+      {
+        title: "The Movie",
+        tag: "",
+        description:
+          "The Movie is a simple and clean website dedicated to showcasing movies. It boasts a minimalistic design with a focus on user experience.",
+        image_cover: require("@/assets/movie2.png"),
+        github_url: "https://github.com/lutfir2019/the-movie",
+        link: "https://the-movie-red.vercel.app/"
+      },
+      {
+        title: "MeMo",
+        tag: "JavaScript, NextJs, Vercel",
+        description:
+          "MeMo is a personal memory assistant that helps users to remember and recall information.",
+        image_cover: require("@/assets/reminder2.jpg"),
+        github_url: "https://github.com/lutfir2019/MeMo",
+        link: "https://me-mo.vercel.app/"
+      }
+    ];
+    this.showLoader = false;
   }
 };
 </script>
@@ -107,7 +104,7 @@ export default {
 .project-cover {
   width: inherit;
   border-radius: 3px;
-  mix-blend-mode: multiply;
+  mix-blend-mode: normal;
 }
 hr.dope {
   border: 0;
