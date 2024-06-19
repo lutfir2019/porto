@@ -4,10 +4,7 @@
     <b-spinner variant="primary" v-if="showLoader"></b-spinner>
     <div class="container" v-if="projects.length > 0">
       <div class="row" v-for="(project, index) in projects" :key="index">
-        <div :class="`col-md-5 ${isBlur && 'blur'}`">
-          <!-- v-if="isBlur" -->
-          <div :class="isBlur && 'blur-componen'"></div>
-          <!-- v-else -->
+        <div :class="`col-md-5`">
           <img
             :src="project.image_cover"
             :alt="project.title"
@@ -47,7 +44,6 @@ export default {
     return {
       projects: [],
       showLoader: true,
-      isBlur: true
     };
   },
   head: {
@@ -98,9 +94,6 @@ export default {
       }
     ];
     this.showLoader = false;
-    setTimeout(() => {
-      this.isBlur = false;
-    }, 4000);
   }
 };
 </script>
@@ -124,7 +117,6 @@ hr.dope {
 }
 .blur {
   filter: blur(5px); /* Ubah nilai blur sesuai kebutuhan Anda */
-  /* animation: pulse 2s infinite; */
 }
 .blur-componen {
   background-color: white;
