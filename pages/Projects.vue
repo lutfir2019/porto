@@ -79,7 +79,7 @@ export default {
         tag: "NextJs, Vercel",
         description:
           "Providing information about the khodam within yourself, including its origins, strengths, and a brief description of the khodam you possess.",
-        image_cover: require("@/assets/mystic.jpg"),
+        image_cover: require("@/assets/mystic2.jpg"),
         github_url: "https://github.com/lutfir2019/khodam-checker",
         link: "https://khodam-checker-horror.vercel.app/"
       },
