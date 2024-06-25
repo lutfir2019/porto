@@ -75,6 +75,15 @@ export default {
   mounted() {
     this.projects = [
       {
+        title: "Mystic Horror",
+        tag: "NextJs, Vercel",
+        description:
+          "Providing information about the khodam within yourself, including its origins, strengths, and a brief description of the khodam you possess.",
+        image_cover: require("https://img.freepik.com/free-vector/esoteric-elements-concept_52683-39412.jpg?t=st=1719289072~exp=1719292672~hmac=959ddbb71724afb382a4baa9065d496ec588a86a580ce9d42aaf4d4720ce2efb&w=740"),
+        github_url: "https://github.com/lutfir2019/khodam-checker",
+        link: "https://khodam-checker-horror.vercel.app/"
+      },
+      {
         title: "The Movie",
         tag: "",
         description:
