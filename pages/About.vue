@@ -22,7 +22,7 @@
           <div class="row mt-5 animate__animated animate__fadeInUp">
             <div class="col">
               <ul style="list-style-type: circle;">
-                <li>HTML & CSS</li>
+                <li>Docker</li>
                 <li>Node.js</li>
                 <li>MySQL</li>
               </ul>
@@ -30,8 +30,15 @@
             <div class="col">
               <ul style="list-style-type: circle;">
                 <li>JavaScript</li>
-                <li>Vue.js</li>
-                <li>React.js</li>
+                <li>Typescript</li>
+                <li>Go</li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul style="list-style-type: circle;">
+                <li>React, Next.JS</li>
+                <li>Vue, Nuxt.JS</li>
+                <li>Go Fiber</li>
               </ul>
             </div>
           </div>

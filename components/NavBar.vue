@@ -78,7 +78,8 @@ export default {
     }
   },
   mounted(){
-    this.themeMode = localStorage.themeMode;
+    localStorage.themeMode = "light"
+    this.themeMode = "light";
   }
 };
 </script>

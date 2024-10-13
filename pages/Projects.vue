@@ -18,6 +18,7 @@
           </h2>
           <b-card class="mt-3 mb-3 text-left text-dark">
             <p>{{ project.description }}</p>
+            <p class="tech-stack">Technology Stack: {{ project.tech_stack }}</p>
             <b-link
               :href="project.link"
               target="_blank"
@@ -81,22 +82,44 @@ export default {
   mounted() {
     this.projects = [
       {
+        title: "Ticketing SPBU",
+        tag: "NextJs, Tailwind, Ticketing",
+        description:
+          "Ticketing SPBU Application to facilitate the reporting and monitoring process to the devices found at each SPBU.",
+        image_cover: require("@/assets/edc.png"),
+        tech_stack:
+          "Next.JS, Typescript, TailwindCSS, Ant Design, Zustand, TanStack Query",
+        github_url: "#",
+        link: "#"
+      },
+      {
+        title: "SYGAP",
+        tag: "Vue, tailwind",
+        description:
+          "SYGAP (Services Control System for Great Operation Application) is an IT Service Management (ITSM) application that is intended to facilitate the management of IT Services starting from the Planning, Design, Managing, Improving, and Retiring processes.",
+        image_cover: require("@/assets/sygap.png"),
+        tech_stack: "Vue.JS, Typescript, Pinia, TailwindCSS",
+        github_url: "#",
+        link: "#"
+      },
+      {
+        title: "Enterprise Risk Management",
+        tag: "NuxtJs, Vue",
+        description: "Application used to simplify company risk management.",
+        image_cover: require("@/assets/erm.png"),
+        tech_stack: "Nuxt.JS, Pinia, TailwindCSS",
+        github_url: "#",
+        link: "#"
+      },
+      {
         title: "Mystic Horror",
         tag: "NextJs, Vercel",
         description:
           "Providing information about the khodam within yourself, including its origins, strengths, and a brief description of the khodam you possess.",
         image_cover: require("@/assets/mystic3.png"),
+        tech_stack: "Next.JS, TailwindCSS, SweetAlert2",
         github_url: "https://github.com/lutfir2019/khodam-checker",
         link: "https://khodam-checker-horror.vercel.app/"
-      },
-      {
-        title: "The Movie",
-        tag: "",
-        description:
-          "The Movie is a simple and clean website dedicated to showcasing movies. It boasts a minimalistic design with a focus on user experience.",
-        image_cover: require("@/assets/the-movie.png"),
-        github_url: "https://github.com/lutfir2019/the-movie",
-        link: "https://the-movie-red.vercel.app/"
       },
       {
         title: "MeMo",
@@ -104,8 +127,19 @@ export default {
         description:
           "MeMo is a personal memory assistant that helps users to remember and recall information.",
         image_cover: require("@/assets/memo.png"),
+        tech_stack: "Next.JS, TailwindCSS",
         github_url: "https://github.com/lutfir2019/MeMo",
         link: "https://me-mo.vercel.app/"
+      },
+      {
+        title: "The Movie",
+        tag: "",
+        description:
+          "The Movie is a simple and clean website dedicated to showcasing movies. It boasts a minimalistic design with a focus on user experience.",
+        image_cover: require("@/assets/the-movie.png"),
+        tech_stack: "React.JS",
+        github_url: "https://github.com/lutfir2019/the-movie",
+        link: "https://the-movie-red.vercel.app/"
       }
     ];
     this.showLoader = false;
@@ -139,5 +173,9 @@ hr.dope {
   height: 70%;
   position: absolute;
   transform: translateX(-10px);
+}
+.tech-stack {
+  font-size: smaller;
+  font-weight: bold;
 }
 </style>
