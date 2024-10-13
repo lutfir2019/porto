@@ -18,11 +18,17 @@
           </h2>
           <b-card class="mt-3 mb-3 text-left text-dark">
             <p>{{ project.description }}</p>
-            <b-link :href="project.link"
+            <b-link
+              :href="project.link"
+              target="_blank"
+              rel="noopener noreferrer"
               >Check it out! <LinkIcon style="color: #000;"
             /></b-link>
             <hr />
-            <b-link :href="project.github_url"
+            <b-link
+              :href="project.github_url"
+              target="_blank"
+              rel="noopener noreferrer"
               >View source code <GithubIcon style="color: #000;"
             /></b-link>
           </b-card>
@@ -43,7 +49,7 @@ export default {
   data() {
     return {
       projects: [],
-      showLoader: true,
+      showLoader: true
     };
   },
   head: {
@@ -79,7 +85,7 @@ export default {
         tag: "NextJs, Vercel",
         description:
           "Providing information about the khodam within yourself, including its origins, strengths, and a brief description of the khodam you possess.",
-        image_cover: require("@/assets/mystic2.jpg"),
+        image_cover: require("@/assets/mystic3.png"),
         github_url: "https://github.com/lutfir2019/khodam-checker",
         link: "https://khodam-checker-horror.vercel.app/"
       },
@@ -88,7 +94,7 @@ export default {
         tag: "",
         description:
           "The Movie is a simple and clean website dedicated to showcasing movies. It boasts a minimalistic design with a focus on user experience.",
-        image_cover: require("@/assets/movie2.png"),
+        image_cover: require("@/assets/the-movie.png"),
         github_url: "https://github.com/lutfir2019/the-movie",
         link: "https://the-movie-red.vercel.app/"
       },
@@ -97,7 +103,7 @@ export default {
         tag: "JavaScript, NextJs, Vercel",
         description:
           "MeMo is a personal memory assistant that helps users to remember and recall information.",
-        image_cover: require("@/assets/reminder2.jpg"),
+        image_cover: require("@/assets/memo.png"),
         github_url: "https://github.com/lutfir2019/MeMo",
         link: "https://me-mo.vercel.app/"
       }
